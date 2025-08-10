@@ -30,7 +30,7 @@ def get_files_info(working_directory, directory="."):
             except Exception as e:
                 return f'Error: Could not access item "{item}": {e}'
             result_lines.append(
-                f'- {item}: full_path="{item_path}", file_size={size} bytes, is_dir={is_dir}'
+                f'- {item}: file_size={size} bytes, is_dir={is_dir}'
             )
         return "\n".join(result_lines)
     except Exception as e:
